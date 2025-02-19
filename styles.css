@@ -1,0 +1,157 @@
+/* Reset/Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Base Body Styles */
+  body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000; /* Fallback color if image fails to load */
+  }
+  
+  /* Hero Section Styles */
+  .hero {
+    /* Replace with your image path */
+    background: url('mike-yukhtenko-wfh8dDlNFOk-unsplash.jpg') no-repeat center center/cover;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  /* Dark Overlay to make text stand out */
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Heading Styles */
+  .overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Subtext Styles */
+  .overlay p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Call-to-Action Button Styles */
+  .cta-button {
+    background-color: #c3a68d; /* Example color that complements a cologne theme */
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #a88973;
+  }
+  
+  /* Intro Section Styles */
+  main {
+    background-color: #111; /* Slightly different background below the hero */
+    padding: 2rem;
+  }
+  
+  .intro {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .intro p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ccc;
+  }
+  
+  /* MODAL STYLES */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8); /* Semi-transparent background */
+  }
+  
+  .modal-content {
+    background-color: #222;
+    margin: 10% auto; /* Centered vertically (roughly) */
+    padding: 2rem;
+    width: 300px;
+    max-width: 90%;
+    color: #fff;
+    border-radius: 8px;
+    text-align: left;
+    position: relative;
+  }
+  
+  /* Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .close:hover {
+    color: #fff;
+  }
+  
+  /* Modal Form Styles */
+  .modal-content form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal-content label {
+    margin: 1rem 0 0.5rem;
+  }
+  
+  .modal-content input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .modal-content button {
+    margin-top: 1rem;
+    background-color: #c3a68d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.75rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .modal-content button:hover {
+    background-color: #a88973;
+  }
+  
+  p {
+    color: gray;
+  }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Men's Cologne & Fragrance Club</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Hero Section with Background Image -->
+  <header class="hero">
+    <div class="overlay">
+      <h1>Men's Cologne & Fragrance Club</h1>
+      <p>-Free now...</p>
+      <!-- "Join Now" opens the modal -->
+      <a href="#" class="cta-button" id="openModal">Join Now</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="intro">
+      <h2>Welcome to the Club</h2>
+      <p>
+        Sign up now to receive a monthly newsletter on
+        the new, bold colognes you deserve.
+      </p>
+    </section>
+  </main>
+
+  <!-- SIGNUP MODAL -->
+  <div id="signupModal" class="modal">
+    <div class="modal-content">
+      <!-- Close Button -->
+      <span class="close">&times;</span>
+      <h2>Sign Up</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript to handle modal open/close -->
+  <script>
+    const openModal = document.getElementById('openModal');
+    const signupModal = document.getElementById('signupModal');
+    const closeBtn = document.querySelector('.close');
+
+    // Open modal when "Join Now" is clicked
+    openModal.addEventListener('click', (e) => {
+      e.preventDefault();
+      signupModal.style.display = 'block';
+    });
+
+    // Close modal when "x" is clicked
+    closeBtn.addEventListener('click', () => {
+      signupModal.style.display = 'none';
+    });
+
+    // Close modal if user clicks outside the modal content
+    window.addEventListener('click', (e) => {
+      if (e.target === signupModal) {
+        signupModal.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
